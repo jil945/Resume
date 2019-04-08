@@ -2,8 +2,7 @@
     <div id="app"
          class="container"
          v-bind:data-black-white="isBW"
-    v-bind:data-resume-type="resumeType"
-    >
+    v-bind:data-resume-type="resumeType">
         <div class="header">
             <div class="name">
                 Jim Lee
@@ -22,27 +21,27 @@
                 </thead>
                 <tbody>
                     <tr class="contact address">
-                        <td><i class="fa fa-home" /></td>
+                        <td><i class="fa fa-home"></i></td>
                         <td><h2>6 Oxford</h2></td>
                     </tr>
                     <tr class="contact address">
-                        <td />
+                        <td></td>
                         <td><h2>Irvine, CA 92612</h2></td>
                     </tr>
                     <tr class="contact phone-number">
-                        <td><i class="fa fa-phone" /></td>
+                        <td><i class="fa fa-phone"></i></td>
                         <td><h2><a href="tel:9495021395">(949) 502-1395</a></h2></td>
                     </tr>
                     <tr class="contact email">
-                        <td><i class="fa fa-envelope" /></td>
+                        <td><i class="fa fa-envelope"></i></td>
                         <td><h2><a href="mailto:jimleee945@gmail.com">jimleee945@gmail.com</a></h2></td>
                     </tr>
                     <tr class="contact linkedln">
-                        <td><i class="fa fa-linkedin-square" /></td>
+                        <td><i class="fa fa-linkedin-square"></i></td>
                         <td><h2><a href="https://www.linkedin.com/in/jimleee945/">linkedin.com/in/jimleee945</a></h2></td>
                     </tr>
                     <tr class="contact github">
-                        <td><i class="fa fa-github" /></td>
+                        <td><i class="fa fa-github"></i></td>
                         <td><h2><a href="https://github.com/jil945">https://github.com/jil945</a></h2></td>
                     </tr>
                 </tbody>

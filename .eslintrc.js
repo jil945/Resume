@@ -21,18 +21,23 @@ module.exports = {
         "linebreak-style": "off",
         "quotes": ["error", "double"],
         "semi": ["error", "always"],
+        "vue/component-name-in-template-casing": ["error", "kebab-case"],
         "vue/no-unused-vars": "error",
+        "vue/v-bind-style": [ "error", "longform" ],
+        "vue/v-on-style"  : [ "error", "longform" ],
+        "vue/html-closing-bracket-newline": ["error", {
+            "singleline": "never",
+            "multiline": "never"
+        }],
         "vue/html-indent": ["error", 4,{
             "alignAttributesVertically": true,
             "ignores": [ "VAttribute" ]
         }],
-        "vue/v-bind-style": [ "error", "longform" ],
-        "vue/v-on-style"  : [ "error", "longform" ],
         "vue/html-self-closing": ["error", {
             "html": {
                 "void": "never",
-                "normal": "always",
-                "component": "any"
+                "normal": "never",
+                "component": "never"
             },
             "svg": "always",
             "math": "always"
