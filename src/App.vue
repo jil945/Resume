@@ -274,16 +274,29 @@ export default {
             const UCI  = "University of California, Irvine";
             const UCSD = "University of California, San Diego";
 
-            let webWorkerBenchmark = {
-                title: "Web Worker Benchmark",
-                techUsed: ["JavaScript", "HTML", "CSS"],
+            let JEFS = {
+                title: "Just Enjoy Our Food Suggestions",
+                techUsed: ["React Native", "Django"],
                 location: UCI,
-                date: "Fall 2017",
+                date: "Winter 2019",
                 details: [
-                    "Benchmarked the limitation/potential of web workers across different web browsers",
-                    "Created a RSA encrypt/decrypt website to demonstrate potential of web workers",
+                    "A cross-platform meal recommendation mobile app focused on weight loss",
+                    "Used passive data stream and user preferences to create a weekly meal plan",
+                    "Worked in a group of 4, responsible for front end"
                 ]
             };
+
+            let othelloAi = {
+                title: "Othello AI",
+                techUsed: ["Python"],
+                location: UCI,
+                date: "Fall 2018",
+                details: [
+                    "Created an Othello AI using the Alpha-Beta pruning algorithm",
+                    "Tested different heuristics to create the best heuristic for Othello"
+                ]
+            };
+
             let wifiTcp = {
                 title: "Optimal Transport Layer Protocol over Wifi",
                 techUsed: ["C++"],
@@ -292,6 +305,16 @@ export default {
                 details: [
                     "Simulated a wireless home network using ns-3",
                     "Compared the latency, re-transmission rate, and throughput across the variations of TCP and UDP in the simulated network",
+                ]
+            };
+            let webWorkerBenchmark = {
+                title: "Web Worker Benchmark",
+                techUsed: ["JavaScript", "HTML", "CSS"],
+                location: UCI,
+                date: "Fall 2017",
+                details: [
+                    "Benchmarked the limitation/potential of web workers across different browsers",
+                    "Created a RSA encrypt/decrypt website to demonstrate potential of web workers",
                 ]
             };
             let whoseChore = {
@@ -325,9 +348,9 @@ export default {
             };
 
             if (this.isNetwork) {
-                return [ wifiTcp,  webWorkerBenchmark, whoseChore, autoComplete, fileCompDepressor ];
+                return [ wifiTcp, JEFS, othelloAi, webWorkerBenchmark, whoseChore ];
             }
-            return [ webWorkerBenchmark, wifiTcp, whoseChore, autoComplete, fileCompDepressor ];
+            return [ JEFS, othelloAi, webWorkerBenchmark, wifiTcp, whoseChore ];
         }
     },
     methods: {
