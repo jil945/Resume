@@ -282,7 +282,7 @@ export default {
                 details: [
                     "A cross-platform meal recommendation mobile app focused on weight loss",
                     "Used passive data stream and user preferences to create a weekly meal plan",
-                    "Worked in a group of 4, responsible for front end"
+                    // "Worked in a group of 4, responsible for front end"
                 ]
             };
 
@@ -313,8 +313,8 @@ export default {
                 location: UCI,
                 date: "Fall 2017",
                 details: [
-                    "Benchmarked the limitation/potential of web workers across different browsers",
-                    "Created a RSA encrypt/decrypt website to demonstrate potential of web workers",
+                    "Benchmarked the limits/potential of web workers across different browsers",
+                    "Created a RSA encrypt/decrypt website using web workers",
                 ]
             };
             let whoseChore = {
