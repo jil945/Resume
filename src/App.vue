@@ -22,11 +22,11 @@
                 <tbody>
                     <tr class="contact address">
                         <td><i class="fa fa-home"></i></td>
-                        <td><h2>6 Oxford</h2></td>
+                        <td><h2>228 E Charleston Rd</h2></td>
                     </tr>
                     <tr class="contact address">
                         <td></td>
-                        <td><h2>Irvine, CA 92612</h2></td>
+                        <td><h2>Palo Alto, CA 94306</h2></td>
                     </tr>
                     <tr class="contact phone-number">
                         <td><i class="fa fa-phone"></i></td>
@@ -92,7 +92,7 @@
                 <hr>
                 <div class="job">
                     <div class="duration">
-                        9/2017 - Present
+                        9/2017 - 6/2019
                     </div>
                     <h2 class="title">
                         Software Development Intern
