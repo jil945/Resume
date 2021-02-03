@@ -22,11 +22,11 @@
                 <tbody>
                     <tr class="contact address">
                         <td><i class="fa fa-home"></i></td>
-                        <td><h2>228 E Charleston Rd</h2></td>
+                        <td><h2>1482 Nightshade Rd. U#31</h2></td>
                     </tr>
                     <tr class="contact address">
                         <td></td>
-                        <td><h2>Palo Alto, CA 94306</h2></td>
+                        <td><h2>Milpitas, CA 95035</h2></td>
                     </tr>
                     <tr class="contact phone-number">
                         <td><i class="fa fa-phone"></i></td>
@@ -90,6 +90,24 @@
             <div class="experience">
                 <h1>Experience</h1>
                 <hr>
+                <div class="job">
+                    <div class="duration">
+                        7/2019 - Current
+                    </div>
+                    <h2 class="title">
+                        Software Engineer - Data Engineering
+                    </h2>
+                    <div class="location">
+                        Atlassian, <span class="city">Mountain View, CA</span>
+                    </div>
+                    <div class="details">
+                        <ul>
+                            <li>Designed, built and maintained data pipelines that extract data from multiple source systems and stores the data into AWS DynmaoDB and Elasticsearch</li>
+                            <li>Developed a standard library for building data pipelines used by other internal teams written in Python and Java</li>
+                            <li>Built and maintained GraphQL service to access data from Elasticsearch</li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="job">
                     <div class="duration">
                         9/2017 - 6/2019
@@ -228,16 +246,16 @@ export default {
             let res = [];
             res.push({
                 title: "Advance",
-                value: [ this.isNetwork ? "C/C++" : "JavaScript", "Python", "Java"],
+                value: [ "Python", "Java", "Javascript"],
             });
             res.push({
                 title: "Proficient",
-                value: [this.isNetwork ? "JavaScript" : "C/C++", "HTML", "CSS", "PHP", "SQL"],
+                value: ["C/C++", "HTML", "CSS", "PHP", "SQL"],
             });
-            res.push({
-                title: "Basic",
-                value: ["Ocaml", "Verilog", "MATLAB"]
-            });
+            // res.push({
+            //     title: "Basic",
+            //     value: ["Ocaml", "Verilog", "MATLAB"]
+            // });
             return res;
         },
         skillSet() {
@@ -245,9 +263,13 @@ export default {
             if (!this.isNetwork) {
                 res.push({
                     title: "Frameworks",
-                    value: ["Vue.js", "React.js", "React Native", "Spring", "jQuery"]
+                    value: ["Flask", "Spring", "Vue.js", "React.js", "React Native", "jQuery"]
                 });
             }
+            res.push({
+                title: "AWS",
+                value: ["SQS", "EC2", "S3", "DynamoDB", "Elasticsearch"]
+            });
             res.push({
                 title: "Tools",
                 value: this.isNetwork ? ["GNS3", "ns-3", "Wireshark"] : ["NPM", "Git", "Mecurial"]
@@ -348,9 +370,9 @@ export default {
             };
 
             if (this.isNetwork) {
-                return [ wifiTcp, JEFS, othelloAi, webWorkerBenchmark, whoseChore ];
+                return [ wifiTcp, JEFS, othelloAi, webWorkerBenchmark ];
             }
-            return [ JEFS, othelloAi, webWorkerBenchmark, wifiTcp, whoseChore ];
+            return [ JEFS, othelloAi, webWorkerBenchmark ];
         }
     },
     methods: {
